@@ -16,7 +16,7 @@ for i in range(-N, N + 1):
 
 List_Length = N * 2 + 1
 
-if a < List_Length and b < List_Length:
+if a < List_Length and b <= List_Length:
     multiplication = myList[a-1] * myList[b-1]
     print(myList)
     print(multiplication)
