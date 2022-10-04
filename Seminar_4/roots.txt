@@ -1,0 +1,6 @@
+4x ** 2 + 4x + 4
+There are no roots.
+4x ** 2 + 4x + 4
+There are no roots.
+4x ** 2 + 4x + 4
+There are no roots.
