@@ -3,26 +3,23 @@
 #    A[i] - 1 = A[i-1]. Найдите это число.
 
 
-from random import choice
+import random
 
+def getArr():
+    path = 'D:/Домашнее задание GeekBrains/Seminar_python(start)/Seminar5/Task1.txt'
+    data = open(path, 'r')
+    arr = list(map(int, (data.readline().split(' '))))
+    data.close()
+    arr.remove(random.choice(arr))
+    print(arr)
+    return arr
 
-def sequ(num):
-    if num < 1:
-        return []
-
-    num_list = list(range(num + 1))
-    num_list.remove(choice(num_list))
-    return num_list
-
-
-def lostie(num_list):
-    for i in range(1, len(num_list)):
-        if num_list[i - 1] != num_list[i] - 1:
-            return num_list[i] - 1
+def checkArr2(arr):
+    if arr[0] == 0:
+        return 0
+    for i in range(1, len(arr)):
+        if (arr[i]-1) != arr[i-1]:
+            return (arr[i]) - 1
     return -1
 
-
-list_nums = sequ(int(input()))
-print(list_nums)
-print(lostie(list_nums))
-
+print(checkArr2(getArr()))
