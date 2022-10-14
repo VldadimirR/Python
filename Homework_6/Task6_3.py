@@ -20,3 +20,14 @@ def dictionary(List):
 
 
 print(dictionary(List))
+
+#Вариант 2
+
+# names = ["Иван", "Мария", "Петр", "Илья", "Марина", "Петр", "Алина", "Бибочка"]
+
+
+# def dict_names(lst):
+#     return dict(sorted(((i[0], sorted([j for j in lst if j[0] == i[0]])) for i in lst), key=lambda x: x[0]))
+
+
+# print(dict_names(names))
